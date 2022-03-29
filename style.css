@@ -1,0 +1,81 @@
+body {
+	font-family: sans-serif;
+	line-height: 1.5;
+}
+
+.none { display: none; }
+
+.red { border: 1px solid red; }
+.green { border: 1px solid green; }
+.blue { border: 1px solid blue; }
+
+.red-text { color: red; }
+.green-text { color: green; }
+
+/* Шапка */
+
+header {
+	padding: 30px 30px 40px;
+	background-color: #DFE7AD;
+	margin-bottom: 30px;
+	width: 300px;
+	border: 1px solid rgb(175, 175, 175);
+	border-radius: 6px;
+}
+
+header h1 {
+	margin-top: 0;
+}
+
+header h3 {
+	margin: 0;
+}
+
+h1 {
+	font-size: 38px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+
+/* Конвертер валют */
+
+.currency-box {
+	max-width: 360px;
+	background-color:#fff;
+	border-radius: 6px;
+
+}
+
+.currency-row {
+	border: 1px solid rgb(175, 175, 175);
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+
+.currency-row:first-child {
+	border-radius: 6px 6px 0 0;
+}
+
+.currency-row:last-child {
+	border-radius: 0 0 6px 6px;
+}
+
+.currency-row:not(:last-child) {
+	margin-bottom: -1px;
+}
+
+.currency-info {
+	margin-right: 15px;
+	padding: 10px 15px;
+	height: 100%;
+	background-color: #DFE7AD;
+	font-size: 22px;
+}
+
+.currency-row span {
+	font-size: 22px;
+	font-weight: 20;
+	margin-right: 10px;
+}
