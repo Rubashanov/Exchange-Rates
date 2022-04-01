@@ -13,8 +13,8 @@ fetch (kurs)
 		 return data.json()
 	}).then(function(data){
 		
-		const USDrate = data[0].sale;
-		const EURrate = data[1].sale;
+		const USDrate = Number(data[0].sale).toFixed(2);
+		const EURrate = Number(data[1].sale).toFixed(2);
 		const USDelement = document.querySelector('#usd');
 		const EURelement = document.querySelector('#eur');
 		USDelement.innerText = USDrate;
